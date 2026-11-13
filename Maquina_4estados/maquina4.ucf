@@ -1,0 +1,13 @@
+# Reloj de 100 MHz
+NET "clk" LOC = V10;
+NET "clk" TNM_NET = clk_pin;
+TIMESPEC TS_clk_pin = PERIOD clk_pin 100 MHz HIGH 50%;
+# Switches
+NET "x<0>"  LOC = T10;  # SW0
+NET "x<1>"  LOC = T9 ;  # SW1
+NET "reset" LOC = T5 ;  # SW7
+# LEDs
+NET "salida<0>" LOC = U16;  # LD0
+NET "salida<1>" LOC = V16;  # LD1
+NET "salida<2>" LOC = U15;  # LD2
+NET "salida<3>" LOC = V15;  # LD3
